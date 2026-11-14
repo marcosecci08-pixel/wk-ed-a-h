@@ -1,0 +1,200 @@
+{
+  "meta": {
+    "titre": "Hyderabad cultural – fin de semana del 28 y 29 de noviembre de 2026",
+    "voyageuse": "Edith",
+    "ville": "Hyderabad, Telangana, India",
+    "date_debut": "2026-11-28",
+    "date_fin": "2026-11-29",
+    "fuseau": "Asia/Kolkata",
+    "devise": "INR",
+    "langue": "es",
+    "donnees_verifiees_le": "2026-11-14",
+    "remarque": "Horarios y precios verificados el 14 de noviembre de 2026; los precios son orientativos y deben confirmarse in situ."
+  },
+  "hotel": {
+    "id": "hotel",
+    "nom": "Fairfield by Marriott Hyderabad Gachibowli",
+    "adresse": "Road No. 2, Financial District, Gachibowli, Hyderabad, Telangana 500032, India",
+    "lat": 17.4237589,
+    "lng": 78.3473854,
+    "telephone": "+91 40 4541 6699",
+    "google_place_id": "ChIJC-VozeiTyzsR34Gax4Fu-jI"
+  },
+  "lieux": [
+    {
+      "id": "shilparamam",
+      "nom": "Shilparamam Art & Craft Village",
+      "categorie": "artisanat",
+      "adresse": "Hi Tech City Main Road, Madhapur, HITEC City, Hyderabad 500081",
+      "lat": 17.452573,
+      "lng": 78.3783065,
+      "horaires": "Todos los días, 10:30 – 20:00",
+      "telephone": "+91 88866 52009",
+      "duree_conseillee_min": 120,
+      "description": "Pueblo de artesanos llegados de toda la India: textiles, joyas, esculturas, cerámica. Ambiente de pueblo tradicional, a 15-20 minutos del hotel.",
+      "google_place_id": "ChIJnViW-duTyzsRATOZDbnTtdU"
+    },
+    {
+      "id": "qutb-shahi",
+      "nom": "Tumbas Qutb Shahi",
+      "categorie": "monument",
+      "adresse": "Qutub Shahi Tombs, Hyderabad 500104",
+      "lat": 17.3955135,
+      "lng": 78.3968211,
+      "horaires": "Todos los días, 9:30 – 16:30",
+      "duree_conseillee_min": 75,
+      "description": "Necrópolis de la dinastía Qutb Shahi: mausoleos con cúpulas, arquitectura indoislámica, jardines tranquilos.",
+      "site": "https://hyderabad.telangana.gov.in/tourist-place/qutub-shahi-tombs/",
+      "google_place_id": "ChIJEadvQpeWyzsR9dHNyw6hS4A"
+    },
+    {
+      "id": "golconde",
+      "nom": "Fuerte de Golconda",
+      "categorie": "monument",
+      "adresse": "Golconda Fort, Hyderabad, Telangana",
+      "lat": 17.3847636,
+      "lng": 78.4033392,
+      "horaires": "Todos los días, aproximadamente 9:00 – 17:30; espectáculo de luz y sonido por la noche",
+      "tarif_indicatif_inr": 300,
+      "duree_conseillee_min": 120,
+      "description": "Fortaleza de los sultanes de Golconda. Subida a la cima (unos 380 escalones) para la puesta de sol, célebre acústica de la puerta Fateh Darwaza.",
+      "google_place_id": "ChIJ80ITX4yWyzsR34Tevb2pUtc"
+    },
+    {
+      "id": "chowmahalla",
+      "nom": "Palacio Chowmahalla",
+      "categorie": "palais",
+      "adresse": "20-4-236, Khilwath Rd, Khilwat, Hyderabad 500002",
+      "lat": 17.3580016,
+      "lng": 78.4716789,
+      "horaires": "10:00 – 17:00, cerrado los viernes y festivos; taquilla hasta las 16:30",
+      "tarif_indicatif_inr": 400,
+      "telephone": "+91 40 2452 2032",
+      "site": "https://www.chowmahalla.in/",
+      "duree_conseillee_min": 90,
+      "description": "Antigua residencia oficial de los Nizams: salón del trono Khilwat Mubarak, lámparas de araña, patios y colección de coches antiguos.",
+      "google_place_id": "ChIJq6qq2oqXyzsR6Ovd2kXV2U0"
+    },
+    {
+      "id": "charminar",
+      "nom": "Charminar, Laad Bazaar y Mecca Masjid",
+      "categorie": "monument",
+      "adresse": "Charminar Rd, Char Kaman, Ghansi Bazaar, Hyderabad 500002",
+      "lat": 17.3615636,
+      "lng": 78.4746645,
+      "horaires": "Charminar: todos los días, 9:00 – 17:30",
+      "telephone": "+91 40 6674 5986",
+      "duree_conseillee_min": 75,
+      "description": "Monumento emblemático de la ciudad, bazar de las pulseras y las perlas (Laad Bazaar) y gran mezquita Mecca Masjid justo al lado.",
+      "google_place_id": "ChIJm5MaboqXyzsR-xPxquRpWss"
+    },
+    {
+      "id": "salar-jung",
+      "nom": "Museo Salar Jung",
+      "categorie": "musee",
+      "adresse": "Darulshifa, Hyderabad 500002",
+      "lat": 17.3716084,
+      "lng": 78.4802439,
+      "horaires": "10:00 – 18:00, cerrado los viernes y festivos; taquilla hasta las 17:15",
+      "tarif_indicatif_inr": 500,
+      "telephone": "+91 40 2457 6443",
+      "site": "https://salarjungmuseum.in/",
+      "duree_conseillee_min": 120,
+      "description": "Una de las grandes colecciones de arte de la India: la Rebeca velada, el reloj musical, las galerías indias.",
+      "google_place_id": "ChIJu9dj4oeXyzsRQaBpm0uTOzU"
+    },
+    {
+      "id": "falaknuma",
+      "nom": "Taj Falaknuma Palace",
+      "categorie": "palais",
+      "adresse": "Engine Bowli, Falaknuma, Hyderabad 500053",
+      "lat": 17.3314792,
+      "lng": 78.4674647,
+      "horaires": "Hotel: acceso únicamente con reserva (high tea o cena)",
+      "telephone": "+91 40 6629 8585",
+      "site": "https://www.tajhotels.com/en-in/hotels/taj-falaknuma-palace-hyderabad",
+      "duree_conseillee_min": 105,
+      "description": "Antiguo palacio del Nizam convertido en hotel, sobre una colina al sur de la ciudad vieja.",
+      "google_place_id": "ChIJQSoXVFa9yzsRLgAgJMKw29M"
+    }
+  ],
+  "jours": [
+    {
+      "id": "samedi",
+      "date": "2026-11-28",
+      "libelle": "Sábado 28 de noviembre",
+      "titre": "Artesanía y herencia Qutb Shahi",
+      "zone": "Oeste de la ciudad, cerca del hotel",
+      "resume": "Jornada sin cruzar la ciudad: artesanía por la mañana, necrópolis real y luego fortaleza a la puesta de sol.",
+      "evenements": [
+        { "id": "sam-01", "heure": "10:00", "type": "trajet", "titre": "Salida del hotel", "description": "Coche con chófer o Uber/Ola. De 15 a 20 minutos de trayecto." },
+        { "id": "sam-02", "heure": "10:30", "fin": "12:30", "type": "visite", "lieu_id": "shilparamam", "titre": "Shilparamam Art & Craft Village", "description": "Paseo entre los puestos de los artesanos.", "conseils": ["Los precios se negocian", "Efectivo en billetes pequeños"] },
+        { "id": "sam-03", "heure": "12:45", "fin": "13:40", "type": "repas", "titre": "Almuerzo", "description": "En el barrio, en Hitec City o Jubilee Hills. Restaurante a elegir sobre la marcha o con la conserjería." },
+        { "id": "sam-04", "heure": "14:00", "fin": "15:15", "type": "visite", "lieu_id": "qutb-shahi", "titre": "Tumbas Qutb Shahi", "description": "Calcular 1 h 15 para los mausoleos y los jardines.", "conseils": ["Cierra a las 16:30", "Sombrero y agua: poca sombra"] },
+        { "id": "sam-05", "heure": "15:30", "fin": "17:30", "type": "visite", "lieu_id": "golconde", "titre": "Fuerte de Golconda", "description": "Subida a la cima para la puesta de sol.", "conseils": ["Unos 380 escalones: buen calzado", "Se recomienda un guía oficial en la entrada", "Rechazar a los guías espontáneos"] },
+        { "id": "sam-06", "heure": "17:30", "type": "pratique", "lieu_id": "golconde", "titre": "Taquilla del espectáculo de luz y sonido", "description": "La taquilla del espectáculo abre a las 17:30. Entrada independiente de la del fuerte, unas 140 INR en categoría superior." },
+        { "id": "sam-07", "heure": "18:30", "fin": "19:25", "type": "spectacle", "lieu_id": "golconde", "titre": "Luz y sonido en inglés", "description": "Primera sesión, en inglés, de unos 55 minutos.", "a_confirmer": true, "conseils": ["Pedir al hotel que confirme el horario la víspera", "Repelente de mosquitos"] },
+        { "id": "sam-08", "heure": "19:30", "type": "trajet", "titre": "Regreso al hotel", "description": "Unos 30 minutos. Regreso de noche: chófer reservado con antelación, ningún vehículo parado en la calle." }
+      ]
+    },
+    {
+      "id": "dimanche",
+      "date": "2026-11-29",
+      "libelle": "Domingo 29 de noviembre",
+      "titre": "La ciudad vieja de los Nizams",
+      "zone": "Ciudad vieja (centro histórico)",
+      "resume": "El corazón histórico, solo de día, con el mismo chófer toda la jornada.",
+      "evenements": [
+        { "id": "dim-01", "heure": "09:00", "type": "trajet", "titre": "Salida del hotel", "description": "De 50 a 60 minutos de trayecto hasta la ciudad vieja. Coche con chófer para todo el día." },
+        { "id": "dim-02", "heure": "10:00", "fin": "11:30", "type": "visite", "lieu_id": "chowmahalla", "titre": "Palacio Chowmahalla", "description": "Llegar a la apertura: salón del trono, lámparas de araña, coches antiguos de los Nizams.", "conseils": ["1 h 30 de visita"] },
+        { "id": "dim-03", "heure": "11:45", "fin": "13:00", "type": "visite", "lieu_id": "charminar", "titre": "Charminar, Laad Bazaar y Mecca Masjid", "description": "A 5 minutos a pie del palacio. Vuelta al monumento, bazar de las pulseras y las perlas, patio de la mezquita.", "conseils": ["Multitud densa: bolso por delante", "Hombros y rodillas cubiertos", "Pañuelo para la mezquita", "Rechazar a los guías espontáneos"] },
+        { "id": "dim-04", "heure": "13:00", "fin": "13:50", "type": "repas", "titre": "Almuerzo", "description": "Restaurante a elegir con el chófer o la conserjería; evitar la comida callejera." },
+        { "id": "dim-05", "heure": "14:00", "fin": "16:00", "type": "visite", "lieu_id": "salar-jung", "titre": "Museo Salar Jung", "description": "Centrarse en la Rebeca velada, el reloj musical y las galerías indias: 2 horas bastan.", "conseils": ["Taquilla hasta las 17:15"] },
+        { "id": "dim-06", "heure": "16:30", "fin": "18:15", "type": "visite", "lieu_id": "falaknuma", "titre": "High tea en el Taj Falaknuma Palace", "description": "Té en el antiguo palacio del Nizam.", "optionnel": true, "reservation_obligatoire": true, "conseils": ["Reservar antes de la salida: acceso denegado sin reserva", "Suprimir si la jornada ya está llena"] },
+        { "id": "dim-07", "heure": "18:30", "type": "trajet", "titre": "Regreso al hotel", "description": "Aproximadamente 1 hora. Sin el high tea, salida de la ciudad vieja hacia las 16:15, antes de que anochezca." }
+      ]
+    }
+  ],
+  "transport": {
+    "recommandation": "Coche con chófer para todo el día, reservado por la conserjería del Fairfield. El chófer espera en cada sitio.",
+    "options": [
+      { "mode": "Coche con chófer", "avis": "recommande", "detail": "Lo más cómodo, sobre todo en la ciudad vieja y para el regreso de Golconda después del anochecer." },
+      { "mode": "Uber u Ola", "avis": "possible", "detail": "Buena alternativa el sábado, cuando los trayectos son cortos. Comprobar la matrícula, compartir el trayecto en directo, sentarse detrás." },
+      { "mode": "Auto-rickshaw parado en la calle", "avis": "a_eviter", "detail": "Precio a negociar, sin trazabilidad." },
+      { "mode": "Metro", "avis": "sans_interet_ici", "detail": "Moderno y limpio, con vagones reservados para mujeres, pero no comunica bien ni el hotel ni los sitios del programa." }
+    ],
+    "temps_de_trajet": [
+      { "de": "Hotel", "a": "Shilparamam", "duree": "15 a 20 min" },
+      { "de": "Hotel", "a": "Fuerte de Golconda", "duree": "unos 30 min" },
+      { "de": "Tumbas Qutb Shahi", "a": "Fuerte de Golconda", "duree": "unos 10 min" },
+      { "de": "Hotel", "a": "Ciudad vieja", "duree": "50 a 60 min" },
+      { "de": "Palacio Chowmahalla", "a": "Charminar", "duree": "5 min a pie" }
+    ]
+  },
+  "securite": [
+    "Hyderabad es una de las grandes ciudades indias más tranquilas; ningún sitio del programa está en una zona a evitar.",
+    "Ciudad vieja alrededor del Charminar: multitud muy densa, carteristas y vendedores insistentes. Ir de día y marcharse antes de que anochezca.",
+    "Rechazar a los «guías» espontáneos; tomar un guía oficial en la entrada de los sitios.",
+    "Ropa que cubra (hombros y rodillas), pañuelo para el patio de la Mecca Masjid.",
+    "Subir únicamente a un vehículo reservado (hotel, Uber, Ola); compartir el trayecto en directo."
+  ],
+  "pratique": [
+    "Solo agua embotellada con el precinto intacto.",
+    "Efectivo en billetes pequeños para las entradas y las compras.",
+    "Número de emergencia único en la India: 112.",
+    "Recepción del hotel: +91 40 4541 6699."
+  ],
+  "urgences": { "numero": "112", "libelle": "Número de emergencia único en la India" },
+  "a_confirmer": [
+    "Horario del espectáculo de luz y sonido de Golconda (18:30 en inglés de noviembre a febrero): pedir al hotel que lo confirme la víspera.",
+    "Reserva del high tea en el Taj Falaknuma Palace, a hacer antes de la salida.",
+    "Precios de entrada: orientativos, las fuentes difieren.",
+    "Restaurantes de los dos almuerzos: sin elegir."
+  ],
+  "sources": [
+    { "titre": "Way to India – guía de Hyderabad", "url": "https://www.waytoindia.com/travel-guide/telangana/hyderabad" },
+    { "titre": "Salar Jung Museum – sitio oficial", "url": "https://salarjungmuseum.in/contact-us/" },
+    { "titre": "Salar Jung Museum – horarios y admisión", "url": "https://salarjungmuseum.in/Hours-and-admission.html" },
+    { "titre": "Hyderabad Tourism – Golconda Fort", "url": "https://hyderabadtourism.travel/golconda-fort-hyderabad" }
+  ]
+}

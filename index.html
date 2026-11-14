@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Hyderabad Week-end</title>
+  <meta name="description" content="Planning hors ligne du week-end à Hyderabad.">
+  <meta name="theme-color" content="#FBF5EA" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#17110C" media="(prefers-color-scheme: dark)">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Hyderabad">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <script>
+    // Applique le thème choisi avant le premier affichage.
+    try {
+      var t = localStorage.getItem('theme');
+      if (t === 'clair' || t === 'sombre') document.documentElement.dataset.theme = t;
+    } catch (e) {}
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="entete">
+    <p class="entete-titre" id="entete-titre">Hyderabad</p>
+    <button type="button" class="bouton-aide" id="ouvrir-appels" aria-haspopup="dialog">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 3.5h3l1.5 4-2 1.5a12 12 0 0 0 6 6l1.5-2 4 1.5v3a2 2 0 0 1-2 2A16 16 0 0 1 4.5 5.5a2 2 0 0 1 2-2z"/></svg>
+      <span>Appels utiles</span>
+    </button>
+  </header>
+
+  <div class="bandeau" id="bandeau-maj" hidden>
+    <span>Le planning a été mis à jour.</span>
+    <button type="button" id="recharger">Recharger</button>
+  </div>
+
+  <main id="app" tabindex="-1">
+    <p class="chargement">Chargement du planning…</p>
+  </main>
+
+  <nav class="onglets" aria-label="Navigation principale">
+    <a href="#/" data-onglet="aujourdhui">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7v5l3.5 2"/></svg>
+      <span>Aujourd'hui</span>
+    </a>
+    <a href="#/jour" data-onglet="jour">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h12M8 12h12M8 18h12"/><circle cx="4" cy="6" r="1"/><circle cx="4" cy="12" r="1"/><circle cx="4" cy="18" r="1"/></svg>
+      <span>Journées</span>
+    </a>
+    <a href="#/sites" data-onglet="sites">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 20h17M6 20V10M10 20V10M14 20V10M18 20V10M4 10l8-6 8 6z"/></svg>
+      <span>Sites</span>
+    </a>
+    <a href="#/carte" data-onglet="carte">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6.5-6-6.5-11a6.5 6.5 0 0 1 13 0c0 5-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg>
+      <span>Carte</span>
+    </a>
+    <a href="#/pratique" data-onglet="pratique">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 11v5.5"/><circle cx="12" cy="7.8" r=".6"/></svg>
+      <span>Pratique</span>
+    </a>
+  </nav>
+
+  <dialog id="appels" aria-labelledby="appels-titre">
+    <h2 id="appels-titre">Appels utiles</h2>
+    <div id="appels-contenu"></div>
+    <form method="dialog"><button class="bouton bouton-discret">Fermer</button></form>
+  </dialog>
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>
