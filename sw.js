@@ -1,6 +1,6 @@
 /* Service worker : tout le contenu est servi depuis le cache, puis rafraîchi en arrière-plan.
    Changer VERSION force le renouvellement complet du cache. */
-const VERSION = 'v3';
+const VERSION = 'v5';
 const CACHE = `hyderabad-${VERSION}`;
 const SOCLE = [
   './',
@@ -65,5 +65,7 @@ async function repondre(event) {
 self.addEventListener('fetch', (event) => {
   const url = new URL(event.request.url);
   if (event.request.method !== 'GET' || url.origin !== self.location.origin) return;
+  // Le test réseau du bouton « Forcer la mise à jour » (?maj=…) doit réellement partir sur le réseau.
+  if (url.searchParams.has('maj')) return;
   event.respondWith(repondre(event));
 });

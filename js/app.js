@@ -438,6 +438,10 @@
       <div class="segments" role="group" aria-label="${L('Thème', 'Tema')}">
         ${[['auto', L('Automatique', 'Automático')], ['clair', L('Clair', 'Claro')], ['sombre', L('Sombre', 'Oscuro')]].map(([v, l]) => `<button type="button" data-theme-choix="${v}" aria-pressed="${theme === v}">${l}</button>`).join('')}
       </div>
+      <h2>${L('Mise à jour', 'Actualización')}</h2>
+      <p class="note">${L("Recharge le planning, les photos et l'appli depuis internet.", 'Vuelve a descargar el programa, las fotos y la aplicación desde internet.')}</p>
+      <div class="actions"><button type="button" class="bouton bouton-principal" id="forcer-maj">${L('Forcer la mise à jour', 'Forzar la actualización')}</button></div>
+      <p class="note" id="etat-maj" role="status"></p>
       <h3>${L('Langue', 'Idioma')}</h3>
       <div class="segments" role="group" aria-label="${L('Langue', 'Idioma')}">
         ${[['fr', 'Français'], ['es', 'Español']].map(([v, l]) => `<button type="button" data-lang-choix="${v}" aria-pressed="${LANG === v}">${l}</button>`).join('')}
@@ -508,6 +512,28 @@
     document.querySelector('#appels form button').textContent = L('Fermer', 'Cerrar');
   }
 
+  /* Vérifie d'abord que le réseau répond, pour ne jamais vider le cache hors ligne. */
+  async function forcerMiseAJour(bouton) {
+    const etat = document.getElementById('etat-maj');
+    const dire = (txt) => { if (etat) etat.textContent = txt; };
+    bouton.disabled = true;
+    dire(L('Vérification du réseau…', 'Comprobando la conexión…'));
+    try {
+      const r = await fetch(`${L('data/trip.json', 'data/trip.es.json')}?maj=${Date.now()}`, { cache: 'no-store' });
+      if (!r.ok) throw new Error(r.status);
+    } catch (e) {
+      dire(L("Pas de réseau : rien n'a été modifié, l'appli reste utilisable hors ligne.", 'Sin conexión: no se ha modificado nada, la aplicación sigue disponible sin conexión.'));
+      bouton.disabled = false;
+      return;
+    }
+    dire(L('Mise à jour en cours…', 'Actualizando…'));
+    try {
+      if ('serviceWorker' in navigator) (await navigator.serviceWorker.getRegistrations()).forEach((reg) => reg.unregister());
+      if ('caches' in window) await Promise.all((await caches.keys()).map((k) => caches.delete(k)));
+    } catch (e) { /* on recharge quand même */ }
+    location.reload();
+  }
+
   function appliquerTheme(choix) {
     try { if (choix === 'auto') localStorage.removeItem('theme'); else localStorage.setItem('theme', choix); } catch (e) { /* stockage indisponible */ }
     if (choix === 'auto') delete document.documentElement.dataset.theme; else document.documentElement.dataset.theme = choix;
@@ -533,6 +559,8 @@
     app.addEventListener('click', (e) => {
       const b = e.target.closest('[data-theme-choix]');
       if (b) { appliquerTheme(b.dataset.themeChoix); afficher(); }
+      const maj = e.target.closest('#forcer-maj');
+      if (maj) forcerMiseAJour(maj);
       const l = e.target.closest('[data-lang-choix]');
       if (l) { try { localStorage.setItem('lang', l.dataset.langChoix); } catch (err) { /* stockage indisponible */ } location.reload(); }
     });
